@@ -52,6 +52,7 @@ class LoadingModal extends Component {
                 animationType={'fade'}
                 style={{ position: "absolute" }}
                 visible={this.state.isVisible}
+                onRequestClose={() => {}}
             >
                 <View style={{ backgroundColor: 'rgba(0,0,0,0.25)', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                     <Spinner isVisible={true} size={this.props.spinnerSize} type={this.props.spinnerType} color={this.props.spinnerColor} />
